@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="asset_barcode" table="x_cdltd_loaner_req_loaner_request">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="u_assigned_to" table="u_imp_tmpl_x_cdltd_loaner_req_loaner_request">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>barcode=true,edge_encryption_enabled=true</attributes>
+        <attributes>import_attribute_name=Assigned to,edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation/>
-        <choice/>
+        <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Asset barcode</column_label>
+        <column_label>Assigned to</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -22,15 +22,15 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>asset_barcode</element>
+        <element>u_assigned_to</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
-        <name>x_cdltd_loaner_req_loaner_request</name>
+        <max_length>32</max_length>
+        <name>u_imp_tmpl_x_cdltd_loaner_req_loaner_request</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -47,16 +47,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-10-09 21:17:47</sys_created_on>
-        <sys_id>91569b35700923007f44d3296c3e155e</sys_id>
+        <sys_created_on>2018-10-10 13:47:45</sys_created_on>
+        <sys_id>e50793f5700923007f44d3296c3e1515</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Asset barcode</sys_name>
+        <sys_name>Assigned to</sys_name>
         <sys_package display_value="Loaner Request" source="x_cdltd_loaner_req">12694be15c0523007f44b7bac732229e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Loaner Request">12694be15c0523007f44b7bac732229e</sys_scope>
-        <sys_update_name>sys_dictionary_x_cdltd_loaner_req_loaner_request_asset_barcode</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-10-10 13:44:45</sys_updated_on>
+        <sys_update_name>sys_dictionary_u_imp_tmpl_x_cdltd_loaner_req_loaner_request_u_assigned_to</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-10 13:47:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
