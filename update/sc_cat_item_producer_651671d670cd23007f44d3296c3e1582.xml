@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</category>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p><img style="align: baseline;" title="" src="sys_attachment.do?sys_id&#61;e049751a70cd23007f44d3296c3e155d" alt="" width="50" height="50" align="baseline" border="" hspace="" vspace="" /> <strong>Please enter your reservation request. Thanks !</strong></p>]]></description>
+        <entitlement_script/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <list_price>0</list_price>
+        <location/>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Loaner Request</name>
+        <no_cart>false</no_cart>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_search>false</no_search>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <picture/>
+        <post_insert_script/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=651671d670cd23007f44d3296c3e1582&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <redirect_url>generated_record</redirect_url>
+        <roles/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <script><![CDATA[// Set the short description to reflect the item and location
+current.short_description = 'Reservation: ' + current.item_type.getDisplayValue() + ' from ' + current.depot.getDisplayValue();
+current.location_to_be_used = producer.location_to_be_used;
+if (producer.location_to_be_used == "Other") {
+   current.location_to_be_used = producer.other;
+}
+
+// Set the initial state to requested
+current.state = 13;]]></script>
+        <short_description>Submit a New Loaner Request</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-11 20:01:11</sys_created_on>
+        <sys_id>651671d670cd23007f44d3296c3e1582</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Loaner Request</sys_name>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_req">12694be15c0523007f44b7bac732229e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">12694be15c0523007f44b7bac732229e</sys_scope>
+        <sys_update_name>sc_cat_item_producer_651671d670cd23007f44d3296c3e1582</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-11 20:18:01</sys_updated_on>
+        <table_name>x_cdltd_loaner_req_loaner_request</table_name>
+        <template/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="delete_multiple" query="documentkey=651671d670cd23007f44d3296c3e1582"/>
+    <fx_price action="delete_multiple" query="id=651671d670cd23007f44d3296c3e1582"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>price</field>
+        <id>651671d670cd23007f44d3296c3e1582</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-11 20:01:11</sys_created_on>
+        <sys_id>291671d670cd23007f44d3296c3e1584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-11 20:01:11</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>recurring_price</field>
+        <id>651671d670cd23007f44d3296c3e1582</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-11 20:01:11</sys_created_on>
+        <sys_id>a516f1d670cd23007f44d3296c3e1579</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-11 20:01:11</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#e7aea5</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/jpeg</content_type>
+        <file_name>luddy.jpeg</file_name>
+        <image_height>122</image_height>
+        <image_width>122</image_width>
+        <size_bytes>2328</size_bytes>
+        <size_compressed>2321</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-11 20:15:03</sys_created_on>
+        <sys_id>e049751a70cd23007f44d3296c3e155d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-11 20:15:03</sys_updated_on>
+        <table_name>sc_cat_item_producer</table_name>
+        <table_sys_id>651671d670cd23007f44d3296c3e1582</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="luddy.jpeg" sys_id="e049751a70cd23007f44d3296c3e155d">e049751a70cd23007f44d3296c3e155d</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-11 20:15:03</sys_created_on>
+        <sys_id>2449751a70cd23007f44d3296c3e155d</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>3084</length>
+        <position>1</position>
+        <sys_attachment display_value="luddy.jpeg" sys_id="e049751a70cd23007f44d3296c3e155d">e049751a70cd23007f44d3296c3e155d</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-11 20:15:03</sys_created_on>
+        <sys_id>a449751a70cd23007f44d3296c3e155d</sys_id>
+    </sys_attachment_doc>
+</record_update>
